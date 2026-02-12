@@ -19,6 +19,9 @@ const artifactSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       required: true
+    },
+    media: {
+      type: String // local file path
     }
   },
   { timestamps: true }
